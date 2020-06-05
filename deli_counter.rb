@@ -19,7 +19,8 @@ def now_serving(line_array)
   if line_array.empty?
     puts "There is nobody waiting to be served!"
   else
-    line_array.pop
+    line_array.each do |customer_served|
+      puts ""
   end
 end
     
