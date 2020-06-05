@@ -21,7 +21,7 @@ def now_serving(line_array)
   else
     line_array.each do |customer_served|
       puts "Currently serving #{customer_served}."
-      line_array.shift
+      line_array.pop
     end
   end
 end
