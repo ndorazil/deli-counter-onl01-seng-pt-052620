@@ -20,7 +20,7 @@ def now_serving(line_array)
     puts "There is nobody waiting to be served!"
   else
     line_array.each do |customer_served|
-      puts ""
+      puts "Currently serving #{customer_served}"
   end
 end
     
