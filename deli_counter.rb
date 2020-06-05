@@ -20,7 +20,8 @@ def now_serving(line_array)
     puts "There is nobody waiting to be served!"
   else
     line(line_array) = line_array
-    line_array.shift
+    line_array.pop
+    puts line_array
   end
 end
     
