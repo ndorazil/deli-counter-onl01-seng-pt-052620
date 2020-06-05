@@ -19,10 +19,7 @@ def now_serving(line_array)
   if line_array.empty?
     puts "There is nobody waiting to be served!"
   else
-    line_array.each do |customer_served|
-      puts "Currently serving #{customer_served.first}."
-      line_array.shift
-    end
+    puts ("Currently serving #{line_array.shift}.")
   end
 end
     
