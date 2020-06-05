@@ -19,7 +19,8 @@ def now_serving(line_array)
   if line_array.empty?
     puts "There is nobody waiting to be served!"
   else
-    puts line(line_array)
+    line(line_array) = line_array
+    line_array.shift
   end
 end
     
